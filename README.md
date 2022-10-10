@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
+## Project Setup
+
+1.  Fork the Repository in `https://bitbucket.org/mirafra_ideation/angular_ui/src/master/` and clone the forked repository in local.
+2.  Run the command `npm i` to install the node modules.
+3.  Run the command `npm install -g @angular/cli` to install the Angular CLI.
+
+## Git Setup
+
+1.  Install the Git from `https://git-scm.com/downloads`.
+2.  Navigate to the project location and run the below command to set the upstream. Add your Bitbucket Id in <your id> in the below command.
+    `git remote add upstream https://<your id>@bitbucket.org/mirafra_ideation/angular_ui.git`
+3.  Run the below command to pull the latest upstream master branch changes into your local.
+    `git pull upstream master`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
