@@ -17,6 +17,16 @@ export class RegisterComponent implements OnInit {
   }
 
   registerUser(){
+    const errors = [];
+    const user = (<HTMLInputElement>document.getElementById('username')).value
+    const email = (<HTMLInputElement>document.getElementById('email')).value;
+    const password = (<HTMLInputElement>document.getElementById('pass')).value
+    const confirmPassword = (<HTMLInputElement>document.getElementById('confPass')).value
+
+    if(password !== confirmPassword){
+      errors.push('Passwords do not match')
+    }
+
     this._auth.registerUser(this.registerUserData)
     .subscribe(
       res => {
